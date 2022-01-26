@@ -1,0 +1,19 @@
+for establish a django project
+ 1.first create a favorite folder like "blog" for holding projects file
+ 2.open a command prompt in "blog" folder and test "py --version"
+ 3.if pipenv not installed run "py -m pip install pipenv" command
+ 4.create a .env file by pycharm or vscode in "blog" folder with exact value of:
+    export PIPENV_VENV_IN_PROJECT = "enabled"
+ 4.1.this create .venv (virtual environment) inside of "blog" folder
+ 5.run "py -m pipenv shell" to create virtual environment(and active that) and Pipfile for project
+ 6.run "python --version" and "py --version" to see the same result
+ 7.install django and other packages with pipenv for simplicity in production later
+ 7.1.so run "pipenv install django" ...
+ 8.create project in same folder of "blog" by run "django-admin startproject core ."
+ 9.you can create an app by run "django-admin startapp home" or "python manage.py startapp home"
+ 10.add .gitignore file in "blog" folder by this values:
+    .*
+ 10.1.this value ".*" tell git to ignore all file and folder that start by . like .env and .venv in project folder "blog"
+ 11.initial git by run "git init" and see the untrack files by "git status"
+ 12.add untrack file to git by "git add -A" and commit them by "git commit -m 'commit message'"
+ 13.Done :)
